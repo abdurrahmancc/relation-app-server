@@ -17,7 +17,11 @@ app.use(
   cors({
     credentials: true,
     crossDomain: true,
-    origin: ["http://localhost:3000"],
+    origin: [
+      "http://localhost:3000",
+      "https://relation-application.web.app/",
+      "https://relation-application.firebaseapp.com/",
+    ],
   })
 );
 app.use(express.json());
