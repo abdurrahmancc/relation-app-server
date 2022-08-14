@@ -18,12 +18,13 @@ app.use(
     credentials: true,
     crossDomain: true,
     origin: [
+      "https://relation-application.web.app",
       "http://localhost:3000",
-      "https://relation-application.web.app/",
-      "https://relation-application.firebaseapp.com/",
+      "https://relation-application.firebaseapp.com",
     ],
   })
 );
+
 app.use(express.json());
 
 // database connection with mongoose
